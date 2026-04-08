@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-accent/20 rounded-3xl blur-3xl animate-pulse" />
           <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden border border-white/10 bg-white/5 group">
             <img
-              src="/profile.png"
+              src={`${import.meta.env.BASE_URL}profile.png`}
               alt="Hasnayen Bin Emrun"
               className="w-full h-full object-contain object-bottom grayscale hover:grayscale-0 transition-all duration-700"
               referrerPolicy="no-referrer"

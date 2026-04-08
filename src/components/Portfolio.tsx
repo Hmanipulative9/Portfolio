@@ -17,7 +17,7 @@ const projects = {
       title: 'Student Notes Portal system',
       category: 'Software',
       description: 'A web-based Student Notes Portal that allows students to easily access and download lecture notes for their courses. It offers a user-friendly interface and efficient database management for organized note retrieval.',
-      image: '/student_notes.png',
+      image: `${import.meta.env.BASE_URL}student_notes.png`,
       tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
       link: '#',
       github: '#'
@@ -26,7 +26,7 @@ const projects = {
       title: 'Pet home takecare center system',
       category: 'Software',
       description: 'MySQL-based academic project for managing system of taking care of pet center.',
-      image: '/pet_home_gate.png',
+      image: `${import.meta.env.BASE_URL}pet_home_gate.png`,
       tags: ['MySQL', 'Database design'],
       link: '#',
       github: '#'
@@ -35,7 +35,7 @@ const projects = {
       title: 'Bazar List Application',
       category: 'Software',
       description: 'C# desktop project for listing the groceries',
-      image: '/bazar_list.png',
+      image: `${import.meta.env.BASE_URL}bazar_list.png`,
       tags: ['C#', '.NET', 'OOP'],
       link: '#',
       github: '#'
