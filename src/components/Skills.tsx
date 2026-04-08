@@ -10,7 +10,7 @@ const skillCategories = [
   {
     title: 'Backend & Frameworks',
     icon: Server,
-    skills: ['.NET', 'React']
+    skills: ['.NET', 'React', 'Django']
   },
   {
     title: 'Databases',
@@ -30,7 +30,7 @@ const skillCategories = [
   {
     title: 'Tools',
     icon: Wrench,
-    skills: ['Adobe Photoshop', 'Adobe Illustrator', 'VS Code', 'Git / GitHub', 'Figma', 'Cisco Packet Tracer']
+    skills: ['Adobe Photoshop', 'Adobe Illustrator', 'AutoCad', 'Git / GitHub', 'Linux', 'Cisco Packet Tracer']
   }
 ];
 
@@ -74,7 +74,7 @@ export default function Skills() {
                   </div>
                 ))}
               </div>
-              
+
               {/* Hover Glow Effect */}
               <div className="absolute -inset-px bg-gradient-to-br from-accent/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             </motion.div>
