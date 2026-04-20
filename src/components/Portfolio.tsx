@@ -5,6 +5,15 @@ import { ExternalLink, Github, Eye } from 'lucide-react';
 const projects = {
   software: [
     {
+      title: 'Memory Assistant Notebook',
+      category: 'Software',
+      description: 'A robust web application for note-taking and memory organization.',
+      image: `${import.meta.env.BASE_URL}memory_assistant.png`,
+      tags: ['React', 'Firebase', 'Tailwind CSS'],
+      link: 'https://memory-assistant-notebook.vercel.app/dashboard',
+      github: '#'
+    },
+    {
       title: 'Bus Reservation System',
       category: 'Software',
       description: 'Java academic project for bus ticket booking system',
@@ -29,15 +38,6 @@ const projects = {
       image: `${import.meta.env.BASE_URL}pet_home_gate.png`,
       tags: ['MySQL', 'Database design'],
       link: '#',
-      github: '#'
-    },
-    {
-      title: 'Memory Assistant Notebook',
-      category: 'Software',
-      description: 'A robust web application for note-taking and memory organization.',
-      image: 'https://picsum.photos/seed/memory/800/600',
-      tags: ['React', 'Firebase', 'Tailwind CSS'],
-      link: 'https://memory-assistant-notebook.vercel.app/dashboard',
       github: '#'
     }
   ],
