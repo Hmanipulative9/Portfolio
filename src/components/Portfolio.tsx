@@ -102,32 +102,49 @@ export default function Portfolio() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="group relative rounded-3xl overflow-hidden glass border-white/5 hover:border-accent/30 transition-all duration-500"
               >
-                <div className="aspect-[16/10] overflow-hidden">
+                <a 
+                  href={project.link} 
+                  target={project.link !== '#' ? '_blank' : undefined}
+                  rel={project.link !== '#' ? 'noopener noreferrer' : undefined}
+                  className="block aspect-[16/10] overflow-hidden group/image"
+                >
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                     referrerPolicy="no-referrer"
                   />
-                </div>
+                </a>
                 
                 <div className="p-8">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">
-                        {project.title}
+                        <a href={project.link} target={project.link !== '#' ? '_blank' : undefined} rel={project.link !== '#' ? 'noopener noreferrer' : undefined}>
+                          {project.title}
+                        </a>
                       </h3>
                       <p className="text-gray-500 text-sm leading-relaxed mb-6">
                         {project.description}
                       </p>
                     </div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 text-white">
                       {project.github && (
-                        <a href={project.github} className="p-2 rounded-full bg-white/5 hover:bg-accent hover:text-black transition-all">
+                        <a 
+                          href={project.github} 
+                          target={project.github !== '#' ? '_blank' : undefined}
+                          rel={project.github !== '#' ? 'noopener noreferrer' : undefined}
+                          className="p-2 rounded-full bg-white/5 hover:bg-accent hover:text-black transition-all"
+                        >
                           <Github size={18} />
                         </a>
                       )}
-                      <a href={project.link} className="p-2 rounded-full bg-white/5 hover:bg-accent hover:text-black transition-all">
+                      <a 
+                        href={project.link} 
+                        target={project.link !== '#' ? '_blank' : undefined}
+                        rel={project.link !== '#' ? 'noopener noreferrer' : undefined}
+                        className="p-2 rounded-full bg-white/5 hover:bg-accent hover:text-black transition-all"
+                      >
                         <ExternalLink size={18} />
                       </a>
                     </div>
