@@ -32,12 +32,12 @@ const projects = {
       github: '#'
     },
     {
-      title: 'Bazar List Application',
+      title: 'Memory Assistant Notebook',
       category: 'Software',
-      description: 'C# desktop project for listing the groceries',
-      image: `${import.meta.env.BASE_URL}bazar_list.png`,
-      tags: ['C#', '.NET', 'OOP'],
-      link: '#',
+      description: 'A robust web application for note-taking and memory organization.',
+      image: 'https://picsum.photos/seed/memory/800/600',
+      tags: ['React', 'Firebase', 'Tailwind CSS'],
+      link: 'https://memory-assistant-notebook.vercel.app/dashboard',
       github: '#'
     }
   ],

@@ -30,7 +30,7 @@ const skillCategories = [
   {
     title: 'Tools',
     icon: Wrench,
-    skills: ['Adobe Photoshop', 'Adobe Illustrator', 'AutoCad', 'Git / GitHub', 'Linux', 'Cisco Packet Tracer']
+    skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Autocad', 'Git / GitHub', 'Linux', 'Cisco Packet Tracer']
   }
 ];
 
