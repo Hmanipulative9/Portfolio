@@ -34,7 +34,7 @@ export default function About() {
             </div>
 
             <div className="flex flex-wrap gap-3 pt-4">
-              {['Computer Engineering', 'Cybersecurity', 'Network Security', 'Web Development', 'Graphic Design', 'Brand Identity', 'Social Media Templates'].map((tag) => (
+              {['Computer Engineering', 'Networking & Routing', 'Cybersecurity', 'SOC Operations', 'Cloud Security', 'Threat Detection', 'SIEM'].map((tag) => (
                 <span key={tag} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
                   {tag}
                 </span>
