@@ -1,36 +1,57 @@
 import { motion } from 'motion/react';
-import { Palette, Code, Wrench, CheckCircle2, Terminal, Server, Database, BrainCircuit } from 'lucide-react';
+import { CheckCircle2, Terminal, Server, Database, Wrench, Shield, Network } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Programming Languages',
-    icon: Terminal,
-    skills: ['Python', 'C / C++', 'C#', 'JavaScript', 'PHP', 'HTML/CSS']
+    title: 'Networking & Security',
+    icon: Network,
+    skills: [
+      'TCP/IP',
+      'OSI Model',
+      'IPv4/IPv6',
+      'Subnetting',
+      'VLANs',
+      'Routing',
+      'Switching',
+      'DNS',
+      'DHCP',
+      'VPN',
+      'Network Security',
+      'Firewall',
+      'Linux'
+    ]
   },
   {
-    title: 'Backend & Frameworks',
-    icon: Server,
-    skills: ['.NET', 'React', 'Django']
-  },
-  {
-    title: 'Databases',
-    icon: Database,
-    skills: ['MySQL', 'Oracle', 'MongoDB']
-  },
-  {
-    title: 'AI & Machine Learning',
-    icon: BrainCircuit,
-    skills: ['Artificial Intelligence', 'Machine Learning', 'Computer Vision & Pattern Recognition']
-  },
-  {
-    title: 'Design Skills',
-    icon: Palette,
-    skills: ['Branding & Logo Design', 'Social Media Design', 'Poster Design', 'Product Photography', 'Flyer Design', 'Email Signature Design']
+    title: 'Cybersecurity',
+    icon: Shield,
+    skills: [
+      'Security Fundamentals',
+      'Incident Response',
+      'Log Analysis',
+      'SIEM tools',
+      'EDR',
+      'Threat Detection'
+    ]
   },
   {
     title: 'Tools',
     icon: Wrench,
-    skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Autocad', 'Git / GitHub', 'Linux', 'Cisco Packet Tracer']
+    skills: ['Cisco Packet Tracer', 'Git & GitHub']
+  },
+  {
+    title: 'Databases',
+    icon: Database,
+    skills: ['Oracle', 'MySQL']
+  },
+  {
+    title: 'Programming Languages',
+    icon: Terminal,
+    skills: ['Python', 'Java', 'C#', 'C', 'C++', 'JavaScript', 'PHP']
+  },
+  {
+    title: 'Backend & Frameworks',
+    icon: Server,
+    skills: ['.NET', 'React']
   }
 ];
 
