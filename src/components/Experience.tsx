@@ -2,16 +2,16 @@ import { motion } from 'motion/react';
 
 const experiences = [
   {
-    role: 'Freelance Graphic Designer',
-    company: 'Local & Online Platforms',
-    period: '2021 – Present',
-    description: 'Delivering high-quality visual solutions for local clients and freelance projects.'
+    role: 'Computer Network Project Lead',
+    company: 'University & Lab Projects',
+    period: '2022 – Present',
+    description: 'Leading the design, configuration, and implementation of network architectures, routing protocols, and secure device configurations.'
   },
   {
-    role: 'Software Project Lead',
-    company: 'University Projects',
-    period: '2022 – Present',
-    description: 'Leading development teams for academic software systems and web portals.'
+    role: 'Threat Detection Documentation',
+    company: 'Cybersecurity Research & Labs',
+    period: '2023 – Present',
+    description: 'Documenting network security logs, analyzing traffic behaviors, and outlining incident response protocols for threat detection.'
   },
   {
     role: 'Graphic Design Enthusiast',
