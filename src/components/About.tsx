@@ -26,10 +26,10 @@ export default function About() {
           >
             <div className="space-y-6 text-gray-400 leading-relaxed">
               <p>
-                Computer Engineering student with a strong focus on cybersecurity and network security, and a keen interest in web development, especially backend systems and API-based architectures. Completed several projects using Java, C#, and database-driven systems, gaining hands-on experience in building practical and efficient software solutions.
+                Passionate about designing, securing, and optimizing modern network infrastructures, with a strong foundation in routing, switching, network segmentation, and secure device management. Experienced in building and troubleshooting network environments involving VLANs, inter-VLAN routing, DHCP services, SSH administration, and network traffic analysis. Adept at identifying connectivity issues, analyzing network behavior, and implementing solutions that improve reliability and performance.
               </p>
               <p>
-                Also an experienced graphic designer specializing in brand design, social media template creation, and digital marketing assets, with work across freelancing platforms and local clients. Knowledgeable in product photography, combining creative and technical skills to deliver complete visual solutions.
+                Continuously expanding expertise in cybersecurity, security operations, and cloud technologies, with a growing focus on threat detection, incident investigation, SIEM platforms, endpoint security, and enterprise infrastructure. Committed to continuous learning, hands-on experimentation, and staying current with evolving networking and security technologies.
               </p>
             </div>
 
