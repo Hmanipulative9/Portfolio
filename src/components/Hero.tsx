@@ -63,7 +63,7 @@ export default function Hero() {
             
             <div className="absolute bottom-6 left-6 right-6 p-4 glass rounded-2xl">
               <p className="text-xs text-accent font-bold tracking-widest uppercase mb-1">Hasnayen</p>
-              <p className="text-sm text-white/80 leading-relaxed">Tech-savvy computer engineer and creative designer, delivering secure, efficient, and visually compelling digital solutions</p>
+              <p className="text-sm text-white/80 leading-relaxed">Network Infrastructure and Cybersecurity Enthusiast dedicated to designing, securing, and optimizing modern technology environments.</p>
             </div>
           </div>
           
