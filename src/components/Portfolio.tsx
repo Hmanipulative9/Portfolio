@@ -1,98 +1,59 @@
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
-const projects = {
-  software: [
-    {
-      title: 'Memory Assistant Notebook',
-      category: 'Software',
-      description: 'A robust web application for note-taking and memory organization.',
-      image: `${import.meta.env.BASE_URL}memory_assistant.png`,
-      tags: ['React', 'Firebase', 'Tailwind CSS'],
-      link: 'https://memory-assistant-notebook.vercel.app/dashboard',
-      github: '#'
-    },
-    {
-      title: 'Bus Reservation System',
-      category: 'Software',
-      description: 'Java academic project for bus ticket booking system',
-      image: 'https://picsum.photos/seed/bus/800/600',
-      tags: ['Java', 'OOP'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Student Notes Portal system',
-      category: 'Software',
-      description: 'A web-based Student Notes Portal that allows students to easily access and download lecture notes for their courses. It offers a user-friendly interface and efficient database management for organized note retrieval.',
-      image: `${import.meta.env.BASE_URL}student_notes.png`,
-      tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Pet home takecare center system',
-      category: 'Software',
-      description: 'MySQL-based academic project for managing system of taking care of pet center.',
-      image: `${import.meta.env.BASE_URL}pet_home_gate.png`,
-      tags: ['MySQL', 'Database design'],
-      link: '#',
-      github: '#'
-    }
-  ],
-  design: [
-    {
-      title: 'Personal Brand Identity',
-      category: 'Design',
-      description: 'Complete logo and visual identity system for a modern creative brand.',
-      image: 'https://picsum.photos/seed/brand/800/600',
-      tags: ['Logo', 'Branding', 'Illustrator'],
-      link: '#'
-    },
-    {
-      title: 'Photography Branding',
-      category: 'Design',
-      description: 'Creative visual branding using photography-based assets for a lifestyle brand.',
-      image: 'https://picsum.photos/seed/photo/800/600',
-      tags: ['Photography', 'Photoshop', 'Social Media'],
-      link: '#'
-    }
-  ]
-};
+const projects = [
+  {
+    title: 'Enterprise DHCP & L3 Switching Infrastructure',
+    category: 'Network Design',
+    description: 'Designed and configured Layer 3 switch-based network segmentation with dynamic IP allocation (DHCP) across multiple department VLANs (HR, IT, and Clients).',
+    image: 'https://raw.githubusercontent.com/Hmanipulative9/Network-Infrastructure-Labs/main/DHCP%20using%20switch/dhcp-using-switch-topology.png',
+    tags: ['VLANs', 'DHCP Services', 'L3 Switching', 'Packet Tracer'],
+    link: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/DHCP%20using%20switch',
+    github: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/DHCP%20using%20switch'
+  },
+  {
+    title: 'Inter-VLAN Routing via Router-on-a-Stick (ROAS)',
+    category: 'Network Design',
+    description: 'Implemented a switched network infrastructure providing VLAN-based traffic segmentation for distinct departments, utilizing sub-interfaces and IEEE 802.1Q encapsulation on a single physical link.',
+    image: 'https://raw.githubusercontent.com/Hmanipulative9/Network-Infrastructure-Labs/main/Router%20on%20a%20stick/router-on-a-stick-topology.png',
+    tags: ['802.1Q Trunking', 'ROAS', 'Inter-VLAN Routing', 'Cisco IOS'],
+    link: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/Router%20on%20a%20stick',
+    github: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/Router%20on%20a%20stick'
+  },
+  {
+    title: 'Secure Switch & Router Management via SSH',
+    category: 'Network Design',
+    description: 'Established encrypted management access (SSH) for network devices, creating local user authentication databases and disabling insecure virtual terminal line protocols (Telnet).',
+    image: 'https://picsum.photos/seed/ssh-network/800/600',
+    tags: ['SSH Administration', 'Device Security', 'VTY Line Protection', 'Cisco IOS'],
+    link: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/blob/main/raw_labs/ssh%20protocol%20implimented.pkt',
+    github: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/blob/main/raw_labs/ssh%20protocol%20implimented.pkt'
+  },
+  {
+    title: 'Switch Virtual Interface (SVI) Gateway Deployment',
+    category: 'Network Design',
+    description: 'Configured Switch Virtual Interfaces (SVIs) to serve as logical management interfaces for Layer 2 switches, enabling remote administrative access and secure host routing.',
+    image: 'https://picsum.photos/seed/svi-gateway/800/600',
+    tags: ['SVI Gateway', 'Management IP', 'L2 Switching', 'Cisco IOS'],
+    link: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/raw_labs/Switch%20Virtual%20Interface',
+    github: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/raw_labs/Switch%20Virtual%20Interface'
+  }
+];
 
 export default function Portfolio() {
-  const [activeTab, setActiveTab] = useState<'software' | 'design'>('software');
-
   return (
     <section id="work" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-accent font-bold tracking-widest uppercase text-xs mb-4">05 / Portfolio</p>
           <h2 className="text-5xl md:text-6xl font-bold font-display tracking-tighter mb-8">
-            Selected <span className="text-accent">Work</span>
+            Network <span className="text-accent">Design</span>
           </h2>
-
-          <div className="flex justify-center gap-4">
-            {(['software', 'design'] as const).map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest transition-all ${
-                  activeTab === tab
-                    ? 'bg-accent text-black'
-                    : 'bg-white/5 text-gray-400 hover:bg-white/10'
-                }`}
-              >
-                {tab} Projects
-              </button>
-            ))}
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           <AnimatePresence mode="wait">
-            {projects[activeTab].map((project, i) => (
+            {projects.map((project, i) => (
               <motion.div
                 key={project.title}
                 layout
