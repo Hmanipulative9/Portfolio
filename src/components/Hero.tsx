@@ -20,7 +20,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-400 max-w-lg mb-10 font-light leading-relaxed">
-            Computer Engineer <span className="text-white/20 mx-2">|</span> Cybersecurity & Networking Enthusiast <span className="text-white/20 mx-2">|</span> Web Developer <span className="text-white/20 mx-2">|</span> Graphic Designer
+            Computer Engineer <span className="text-white/20 mx-2">|</span> Networking & Cybersecurity Enthusiast <span className="text-white/20 mx-2">|</span> SOC & Cloud Security Aspirant
           </p>
 
           <div className="flex flex-wrap gap-4">
