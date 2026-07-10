@@ -24,7 +24,7 @@ const projects = [
     title: 'Secure Switch & Router Management via SSH',
     category: 'Network Design',
     description: 'Established encrypted management access (SSH) for network devices, creating local user authentication databases and disabling insecure virtual terminal line protocols (Telnet).',
-    image: 'https://picsum.photos/seed/ssh-network/800/600',
+    image: 'https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80',
     tags: ['SSH Administration', 'Device Security', 'VTY Line Protection', 'Cisco IOS'],
     link: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/blob/main/raw_labs/ssh%20protocol%20implimented.pkt',
     github: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/blob/main/raw_labs/ssh%20protocol%20implimented.pkt'
@@ -33,7 +33,7 @@ const projects = [
     title: 'Switch Virtual Interface (SVI) Gateway Deployment',
     category: 'Network Design',
     description: 'Configured Switch Virtual Interfaces (SVIs) to serve as logical management interfaces for Layer 2 switches, enabling remote administrative access and secure host routing.',
-    image: 'https://picsum.photos/seed/svi-gateway/800/600',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80',
     tags: ['SVI Gateway', 'Management IP', 'L2 Switching', 'Cisco IOS'],
     link: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/raw_labs/Switch%20Virtual%20Interface',
     github: 'https://github.com/Hmanipulative9/Network-Infrastructure-Labs/tree/main/raw_labs/Switch%20Virtual%20Interface'
