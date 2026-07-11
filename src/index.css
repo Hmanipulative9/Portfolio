@@ -5,8 +5,8 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --color-background: #0D0D0D;
-  --color-accent: #00FF00;
-  --color-accent-dim: rgba(0, 255, 0, 0.1);
+  --color-accent: #00D2FF;
+  --color-accent-dim: rgba(0, 210, 255, 0.1);
 }
 
 @layer base {
@@ -25,7 +25,7 @@
   }
   
   .accent-gradient {
-    @apply bg-gradient-to-r from-accent to-emerald-400;
+    @apply bg-gradient-to-r from-accent to-blue-400;
   }
 
   .glass {

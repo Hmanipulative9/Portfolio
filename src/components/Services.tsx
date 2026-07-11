@@ -24,7 +24,7 @@ const services = [
     title: 'Network Security',
     description: 'Fundamental networking setup and cybersecurity awareness for digital assets.',
     icon: Shield,
-    color: 'from-green-500 to-emerald-500'
+    color: 'from-cyan-500 to-blue-600'
   }
 ];
 
